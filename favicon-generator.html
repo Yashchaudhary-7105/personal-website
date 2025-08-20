@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator - Yash Chaudhary</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        .favicon-preview {
+            text-align: center;
+            margin: 30px 0;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+        }
+        .favicon-display {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .favicon-size {
+            font-size: 12px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        .download-section {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .download-btn {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 10px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            display: block;
+            margin: 10px 0;
+            white-space: pre-wrap;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Favicon Generator</h1>
+        <p style="text-align: center; font-size: 1.2em; margin-bottom: 30px;">
+            Generate and download favicon files for your portfolio website
+        </p>
+        
+        <div class="favicon-preview">
+            <h3>Your Favicon Preview</h3>
+            <div class="favicon-display">
+                <img src="favicon.svg" alt="32x32" style="width: 32px; height: 32px;">
+                <div class="favicon-size">32x32</div>
+            </div>
+            <div class="favicon-display">
+                <img src="favicon.svg" alt="16x16" style="width: 16px; height: 16px;">
+                <div class="favicon-size">16x16</div>
+            </div>
+            <div class="favicon-display">
+                <img src="favicon.svg" alt="64x64" style="width: 64px; height: 64px;">
+                <div class="favicon-size">64x64</div>
+            </div>
+            <p style="margin-top: 20px; font-size: 1.1em;">
+                <strong>YC</strong> - Your initials in a modern gradient design
+            </p>
+        </div>
+
+        <div class="download-section">
+            <h3>Download Favicon Files</h3>
+            <a href="favicon.svg" download class="download-btn">📥 Download SVG</a>
+            <button onclick="generatePNG(16)" class="download-btn">📥 Generate 16x16 PNG</button>
+            <button onclick="generatePNG(32)" class="download-btn">📥 Generate 32x32 PNG</button>
+            <button onclick="generatePNG(64)" class="download-btn">📥 Generate 64x64 PNG</button>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 How to Use</h3>
+            <ol style="text-align: left; line-height: 1.8;">
+                <li>Download the favicon files above</li>
+                <li>Place them in your website's root directory</li>
+                <li>Your HTML already includes the favicon links!</li>
+            </ol>
+            <p style="margin-top: 20px;"><strong>Note:</strong> Your portfolio website is already configured with favicon links in the HTML head section.</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <h4>Modern Design</h4>
+                <p>Clean, professional look with your initials</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h4>Gradient Background</h4>
+                <p>Eye-catching blue to purple gradient</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h4>Responsive</h4>
+                <p>Looks great at all sizes</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h4>Professional</h4>
+                <p>Perfect for your portfolio website</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html" style="color: white; text-decoration: none; padding: 15px 30px; background: rgba(255, 255, 255, 0.2); border-radius: 10px; display: inline-block;">
+                ← Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function generatePNG(size) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Create gradient
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#3b82f6');
+            gradient.addColorStop(1, '#8b5cf6');
+            
+            // Draw rounded rectangle
+            ctx.fillStyle = gradient;
+            ctx.beginPath();
+            const radius = size * 0.2;
+            ctx.moveTo(radius, 0);
+            ctx.lineTo(size - radius, 0);
+            ctx.quadraticCurveTo(size, 0, size, radius);
+            ctx.lineTo(size, size - radius);
+            ctx.quadraticCurveTo(size, size, size - radius, size);
+            ctx.lineTo(radius, size);
+            ctx.quadraticCurveTo(0, size, 0, size - radius);
+            ctx.lineTo(0, radius);
+            ctx.quadraticCurveTo(0, 0, radius, 0);
+            ctx.closePath();
+            ctx.fill();
+            
+            // Draw text
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.5}px Inter, Arial, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('YC', size / 2, size / 2);
+            
+            // Create download link
+            const link = document.createElement('a');
+            link.download = `favicon-${size}x${size}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
