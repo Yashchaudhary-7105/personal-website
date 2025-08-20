@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Chaudhary - Portfolio</title>
+    <meta name="description" content="Portfolio of Yash Chaudhary - 4th Year University Student showcasing projects, skills and experience">
+    <meta name="author" content="Yash Chaudhary">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Yash Chaudhary - Portfolio">
+    <meta property="og:description" content="Portfolio of Yash Chaudhary - 4th Year University Student">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">Yash Chaudhary</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon hidden"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav hidden" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#experience" class="mobile-nav-link">Experience</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#achievements" class="mobile-nav-link">Achievements</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span>Yash Chaudhary</span></h1>
+                <p class="hero-subtitle">Final-year Computer Engineering Student • Web & Android Developer • AI Enthusiast</p>
+                <p class="hero-description">
+                    Building real-world applications through code, one project at a time. 
+                    Specializing in web development, mobile apps, and artificial intelligence.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('#projects')">View My Work</button>
+                    <button class="btn btn-outline" onclick="scrollToSection('#contact')">Get In Touch</button>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Yashchaudhary-7105" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yash-chaudhary0701" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="mailto:yash070105@gmail.com" class="social-link">
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+
+                <button class="scroll-indicator" onclick="scrollToSection('#about')">
+                    <i data-lucide="arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A passionate Computer Engineering student with a drive for innovation and building real-world applications</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-heading">My Journey</h3>
+                    <p class="about-paragraph">
+                        I'm a Final-year Computer Engineering student at Amity University, Noida, passionate about building real-world applications.
+                        I have hands-on experience in web and mobile development, working with technologies like HTML, CSS, JavaScript, Kotlin, Python, and Java.
+                        I also have strong foundations in Data Structures, Algorithms, OOP, and DBMS.
+                    </p>
+                    <p class="about-paragraph">
+                        I believe in the power of technology to solve real-world problems and create 
+                        meaningful impact. My approach combines technical expertise with creative 
+                        problem-solving to deliver solutions that matter.
+                    </p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Internships</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="card-icon education">
+                            <i data-lucide="graduation-cap"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Education</h4>
+                            <p class="card-description">
+                                Final-year Computer Engineering student at Amity University, Noida, with focus on 
+                                software engineering, web technologies, and artificial intelligence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon philosophy">
+                            <i data-lucide="user"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Philosophy</h4>
+                            <p class="card-description">
+                                I believe in writing clean, maintainable code and creating user 
+                                experiences that are both beautiful and functional, with a focus on real-world impact.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="card-icon goals">
+                            <i data-lucide="award"></i>
+                        </div>
+                        <div class="card-content">
+                            <h4 class="card-title">Goals</h4>
+                            <p class="card-description">
+                                Seeking opportunities to apply my skills in real-world projects 
+                                and contribute to innovative teams making a difference in technology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Professional experience and internships that shaped my journey</p>
+            </div>
+
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Android Development Intern</h3>
+                            <span class="experience-company">InstaPreps AI</span>
+                            <span class="experience-period">Time duration ->Feb 2025 - July 2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Worked on authentication flows (Login/Signup/OTP), ViewModels, and UI development using Kotlin and Android Studio. 
+                            Gained hands-on experience in mobile app development and modern Android architecture patterns.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">ViewModels</span>
+                            <span class="tech-tag">Authentication</span>
+                            <span class="tech-tag">UI Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-content">
+                        <div class="experience-header">
+                            <h3 class="experience-title">Web Development Intern</h3>
+                            <span class="experience-company">Com Olho</span>
+                            <span class="experience-period">Time duration ->June 2025- August 2025</span>
+                        </div>
+                        <p class="experience-description">
+                            Contributed to web development projects and gained hands-on experience in HTML, CSS, and JavaScript. 
+                            Worked on real-world web applications and learned modern web development practices.
+                        </p>
+                        <div class="experience-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">A showcase of my technical skills and creative problem-solving abilities</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image blue-purple"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Android Login/Signup System</h3>
+                        <p class="project-description">
+                            Built a secure authentication system using SharedPreferences, ViewModels, and Kotlin in Android Studio. Features include user authentication, secure data storage, and modern UI design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Android Studio</span>
+                            <span class="tech-tag">SharedPreferences</span>
+                            <span class="tech-tag">ViewModels</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yashchaudhary-7105" target="_blank" class="btn btn-outline btn-sm">
+                                <i data-lucide="github"></i>Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i data-lucide="external-link"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image green-teal"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agentic AI for HR</h3>
+                        <p class="project-description">
+                            College AI project focused on building HR solutions using generative & agentic AI techniques. Developed intelligent systems for human resource management and optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Generative AI</span>
+                            <span class="tech-tag">HR Solutions</span>
+                            <span class="tech-tag">Machine Learning</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yashchaudhary-7105" target="_blank" class="btn btn-outline btn-sm">
+                                <i data-lucide="github"></i>Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i data-lucide="external-link"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image orange-red"></div>
+                    <div class="project-content">
+                        <h3 class="project-title">Web Development Sprint</h3>
+                        <p class="project-description">
+                            Developed and deployed a responsive web app in 20–25 days with modern UI/UX practices. Demonstrated rapid development skills and modern web technologies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Yashchaudhary-7105" target="_blank" class="btn btn-outline btn-sm">
+                                <i data-lucide="github"></i>Code
+                            </a>
+                            <a href="#" class="btn btn-primary btn-sm">
+                                <i data-lucide="external-link"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements</h2>
+                <p class="section-subtitle">Recognition and accomplishments that highlight my capabilities</p>
+            </div>
+
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i data-lucide="trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">1st Place - Cybercup 4.0 Hackathon</h3>
+                        <p class="achievement-description">
+                            Winner of Amity University's Cybercup 4.0 Hackathon for developing an iOS mental well-being app 
+                            integrating IoT & Spotify API. Prize: INR 15,000.
+                        </p>
+                        <div class="achievement-tech">
+                            <span class="tech-tag">iOS Development</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Spotify API</span>
+                            <span class="tech-tag">Mental Health</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Project Delivery Success</h3>
+                        <p class="achievement-description">
+                            Successfully delivered multiple real-world projects during internships, demonstrating 
+                            practical application of technical skills and professional work ethic.
+                        </p>
+                        <div class="achievement-tech">
+                            <span class="tech-tag">Project Management</span>
+                            <span class="tech-tag">Team Collaboration</span>
+                            <span class="tech-tag">Real-world Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">A comprehensive toolkit for building modern applications</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon frontend">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3 class="skill-title">Frontend Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon mobile">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <h3 class="skill-title">Mobile Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Android</span>
+                        <span class="skill-tag">ViewModels</span>
+                        <span class="skill-tag">SharedPreferences</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon programming">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <h3 class="skill-title">Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon backend">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h3 class="skill-title">Core Concepts</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">OOP</span>
+                        <span class="skill-tag">DSA</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon ai">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h3 class="skill-title">AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-tag">AI / ML</span>
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon devops">
+                            <i data-lucide="cloud"></i>
+                        </div>
+                        <h3 class="skill-title">Development Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learning-section">
+                <div class="learning-card">
+                    <h3 class="learning-title">Always Learning</h3>
+                    <p class="learning-description">
+                        Technology evolves rapidly, and I'm committed to staying current with the latest 
+                        tools, frameworks, and best practices in software development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and discuss how we can work together on exciting projects</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Let's Talk</h3>
+                    <p class="contact-description">
+                        I'm always excited to discuss new opportunities, whether it's internships, 
+                        collaborative projects, or just connecting with fellow developers. 
+                        Feel free to reach out through any of the channels below!
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <a href="mailto:yash070105@gmail.com" class="contact-value">
+                                    yash070105@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Location</div>
+                                <div class="contact-value">Noida, India</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="follow-section">
+                        <h4 class="follow-title">Follow Me</h4>
+                        <div class="follow-links">
+                            <a href="https://github.com/Yashchaudhary-7105" target="_blank" class="follow-link">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/yash-chaudhary0701" target="_blank" class="follow-link">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:yash070105@gmail.com" class="follow-link">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="form-title">Send a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or just say hello!" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p class="footer-copy">
+                        © 2024 Yash Chaudhary. Made with <i data-lucide="heart" class="heart-icon"></i> and lots of coffee.
+                    </p>
+                </div>
+                <div class="footer-message">
+                    <p>Building the future, one line of code at a time.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
